@@ -1,24 +1,25 @@
 'use strict';
 
-import { NativeModules, requireNativeComponent, View } from 'react-native';
-import { PropTypes } from 'react';
+
+import ReactNative, { NativeModules, requireNativeComponent, View, EdgeInsetsPropType, Platform, PointPropType, StyleSheet, dismissKeyboard, flattenStyle, processDecelerationRate} from 'react-native';
+import React, { PropTypes } from 'react';
 
 
-const ColorPropType = require('ColorPropType');
-const EdgeInsetsPropType = require('EdgeInsetsPropType');
-const Platform = require('Platform');
-const PointPropType = require('PointPropType');
-const React = require('React');
-const ReactNative = require('ReactNative');
-const ScrollResponder = require('ScrollResponder');
-const StyleSheet = require('StyleSheet');
-const StyleSheetPropType = require('StyleSheetPropType');
-const ViewStylePropTypes = require('ViewStylePropTypes');
+const ColorPropType = require('react-native/Libraries/StyleSheet/ColorPropType');
+//const EdgeInsetsPropType = require('EdgeInsetsPropType');
+//const Platform = require('Platform');
+//const PointPropType = require('PointPropType');
+//const React = require('React');
+//const ReactNative = require('ReactNative');
+const ScrollResponder = require('react-native/Libraries/Components/ScrollResponder');
+//const StyleSheet = require('StyleSheet');
+const StyleSheetPropType = require('react-native/Libraries/StyleSheet/StyleSheetPropType');
+const ViewStylePropTypes = require('react-native/Libraries/Components/View/ViewStylePropTypes');
 
-const dismissKeyboard = require('dismissKeyboard');
-const flattenStyle = require('flattenStyle');
+//const dismissKeyboard = require('dismissKeyboard');
+//const flattenStyle = require('flattenStyle');
 const invariant = require('fbjs/lib/invariant');
-const processDecelerationRate = require('processDecelerationRate');
+//const processDecelerationRate = require('processDecelerationRate');
 
 
 
